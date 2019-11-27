@@ -7,3 +7,13 @@ cp /opt/AMDADL/include/* ADL_SDK/
 ./configure CFLAGS="-O3 -Wall -march=native"
 make
 ./sgminer -n
+
+
+
+
+
+git submodule init
+git submodule update
+autoreconf -i
+CFLAGS="-O2 -Wall -march=native -std=gnu99" ./configure <options>
+make
